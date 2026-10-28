@@ -1,0 +1,332 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin_1",
+      "name": "Dr. Ramesh Sharma",
+      "email": "admin@campusmilan.edu",
+      "usn": "ADM202401",
+      "password_hash": "$2b$10$uBbWqYsInl56sOyfwmt93.RAe97H8chUrs02wu36vA0/MzHEXiAzG",
+      "department": "College Administration",
+      "year": 0,
+      "interests": [
+        "Administration",
+        "Leadership",
+        "Institutional Excellence"
+      ],
+      "role": "admin",
+      "active": true,
+      "created_at": "2026-09-28T14:58:59.403Z"
+    },
+    {
+      "_id": "usr_org_1",
+      "name": "Priya Sharma",
+      "email": "priya@campusmilan.edu",
+      "usn": "1MS22AI045",
+      "password_hash": "$2b$10$uBbWqYsInl56sOyfwmt93.3dt6wf4qzlk2vXF1neRM51BCWTHCMk2",
+      "department": "Artificial Intelligence & Machine Learning",
+      "year": 4,
+      "interests": [
+        "AI/ML",
+        "Robotics",
+        "Python",
+        "Workshops"
+      ],
+      "role": "organizer",
+      "active": true,
+      "created_at": "2026-10-03T14:58:59.404Z"
+    },
+    {
+      "_id": "usr_org_2",
+      "name": "Rahul Verma",
+      "email": "rahul@campusmilan.edu",
+      "usn": "1MS22CS102",
+      "password_hash": "$2b$10$uBbWqYsInl56sOyfwmt93.3dt6wf4qzlk2vXF1neRM51BCWTHCMk2",
+      "department": "Cultural & Arts Council",
+      "year": 4,
+      "interests": [
+        "Cultural",
+        "Music",
+        "Drama",
+        "Photography"
+      ],
+      "role": "organizer",
+      "active": true,
+      "created_at": "2026-10-08T14:58:59.404Z"
+    },
+    {
+      "_id": "usr_stu_1",
+      "name": "Aarav Patel",
+      "email": "aarav@campusmilan.edu",
+      "usn": "1MS23CS012",
+      "password_hash": "$2b$10$uBbWqYsInl56sOyfwmt93.eeKs0Oa9ab7mIqKfRg92hQDUEzK3a86",
+      "department": "Computer Science & Engineering",
+      "year": 3,
+      "interests": [
+        "AI/ML",
+        "Web Dev",
+        "Hackathons",
+        "Cybersecurity"
+      ],
+      "role": "student",
+      "active": true,
+      "created_at": "2026-10-13T14:58:59.404Z"
+    },
+    {
+      "_id": "usr_stu_2",
+      "name": "Sneha Rao",
+      "email": "sneha@campusmilan.edu",
+      "usn": "1MS24EC088",
+      "password_hash": "$2b$10$uBbWqYsInl56sOyfwmt93.eeKs0Oa9ab7mIqKfRg92hQDUEzK3a86",
+      "department": "Electronics & Communication Engineering",
+      "year": 2,
+      "interests": [
+        "Robotics",
+        "IoT",
+        "Cultural",
+        "Sports"
+      ],
+      "role": "student",
+      "active": true,
+      "created_at": "2026-10-18T14:58:59.404Z"
+    }
+  ],
+  "events": [
+    {
+      "_id": "evt_1",
+      "title": "U-Hack 2026: 24-Hour Inter-Collegiate Hackathon",
+      "description": "Join the premier flagship hackathon at Apex Institute! Build generative AI solutions, decentralized web apps, or edge IoT systems. Mentors from Google, Microsoft, and leading startups on site with INR 1,50,000 in cash prizes, free swags, and internship fast-track passes.",
+      "category": "Hackathons",
+      "department": "Computer Science & Engineering",
+      "date": "2026-11-14",
+      "time": "09:00 AM",
+      "venue": "Digital Innovation Hub, 3rd Floor Auditorium",
+      "mode": "offline",
+      "organizer_id": "usr_org_1",
+      "organizer_name": "Priya Sharma (AI&ML Dept President)",
+      "poster_url": "/src/assets/images/hackathon_poster_1792854205640.jpg",
+      "google_form_link": "https://docs.google.com/forms/d/e/1FAIpQLScampusHackathon2026/viewform",
+      "payment_link": "https://rzp.io/l/uhack2026",
+      "registration_deadline": "2026-11-10",
+      "status": "open",
+      "photos": [
+        "/src/assets/images/campus_fest_hero_1792854205255.jpg",
+        "/src/assets/images/hackathon_poster_1792854205640.jpg"
+      ],
+      "approved": true,
+      "created_at": "2026-10-16T14:58:59.404Z"
+    },
+    {
+      "_id": "evt_2",
+      "title": "Dhwanika '26: Annual Inter-College Cultural Music & Dance Fest",
+      "description": "The biggest cultural extravaganza of the semester! Featuring live collegiate battle of bands, classical fusion jugalbandi, street play competitions, solo vocal showdowns, and acoustic night under the stars. Special celebrity artist performance at 7 PM.",
+      "category": "Cultural",
+      "department": "Cultural & Arts Council",
+      "date": "2026-11-20",
+      "time": "04:30 PM",
+      "venue": "Main Campus Amphitheater & Open Grounds",
+      "mode": "offline",
+      "organizer_id": "usr_org_2",
+      "organizer_name": "Rahul Verma (Cultural Secretary)",
+      "poster_url": "/src/assets/images/cultural_fest_poster_1792854206374.jpg",
+      "google_form_link": "https://docs.google.com/forms/d/e/1FAIpQLSdhwanika2026/viewform",
+      "registration_deadline": "2026-11-18",
+      "status": "open",
+      "photos": [
+        "/src/assets/images/cultural_fest_poster_1792854206374.jpg"
+      ],
+      "approved": true,
+      "created_at": "2026-10-18T14:58:59.404Z"
+    },
+    {
+      "_id": "evt_3",
+      "title": "RoboNav 4.0: Autonomous Rovers & Edge AI Workshop",
+      "description": "Hands-on practical robotics workshop covering ROS2, SLAM navigation, LiDAR obstacle avoidance, and onboard computer vision model inference with NVIDIA Jetson kits. Hardware kits provided for hands-on team challenges.",
+      "category": "Workshops",
+      "department": "Artificial Intelligence & Machine Learning",
+      "date": "2026-11-08",
+      "time": "10:00 AM",
+      "venue": "Robotics & Mechatronics Advanced Lab",
+      "mode": "offline",
+      "organizer_id": "usr_org_1",
+      "organizer_name": "Priya Sharma (AI&ML Dept President)",
+      "poster_url": "/src/assets/images/robotics_symposium_poster_1792854206316.jpg",
+      "google_form_link": "https://docs.google.com/forms/d/e/1FAIpQLSrobonav4workshop/viewform",
+      "payment_link": "https://rzp.io/l/robonav2026",
+      "registration_deadline": "2026-11-05",
+      "status": "open",
+      "photos": [
+        "/src/assets/images/robotics_symposium_poster_1792854206316.jpg"
+      ],
+      "approved": true,
+      "created_at": "2026-10-20T14:58:59.404Z"
+    },
+    {
+      "_id": "evt_4",
+      "title": "Olympus: Inter-Department Athletics & Track Championship",
+      "description": "Annual inter-department athletic championship featuring 100m, 400m sprint relays, long jump, shot put, and 5k cross-country marathon. Earn championship rolling trophy points for your department!",
+      "category": "Sports",
+      "department": "Sports & Athletics Board",
+      "date": "2026-11-28",
+      "time": "08:00 AM",
+      "venue": "University Central Sports Stadium & Synthetic Track",
+      "mode": "offline",
+      "organizer_id": "usr_admin_1",
+      "organizer_name": "Dr. Ramesh Sharma (Sports Convener)",
+      "poster_url": "/src/assets/images/sports_meet_poster_1792854207166.jpg",
+      "google_form_link": "https://docs.google.com/forms/d/e/1FAIpQLSolympusSportsMeet/viewform",
+      "registration_deadline": "2026-11-24",
+      "status": "open",
+      "photos": [
+        "/src/assets/images/sports_meet_poster_1792854207166.jpg"
+      ],
+      "approved": true,
+      "created_at": "2026-10-22T14:58:59.404Z"
+    },
+    {
+      "_id": "evt_5",
+      "title": "Full-Stack Web3 & Microservices Architecture Masterclass",
+      "description": "Deep dive into event-driven backend microservices, high-concurrency systems, GraphQL gateway design, and blockchain smart contract integration. Included live code labs and deployment to Cloud Run.",
+      "category": "Seminars",
+      "department": "Information Science & Engineering",
+      "date": "2026-10-18",
+      "time": "02:00 PM",
+      "venue": "Virtual Seminar Room (Google Meet)",
+      "mode": "online",
+      "organizer_id": "usr_org_1",
+      "organizer_name": "Priya Sharma (AI&ML Dept President)",
+      "poster_url": "/src/assets/images/hackathon_poster_1792854205640.jpg",
+      "google_form_link": "https://docs.google.com/forms/d/e/1FAIpQLSweb3seminar/viewform",
+      "registration_deadline": "2026-10-15",
+      "status": "closed",
+      "photos": [
+        "/src/assets/images/campus_fest_hero_1792854205255.jpg"
+      ],
+      "approved": true,
+      "created_at": "2026-10-03T14:58:59.404Z"
+    },
+    {
+      "_id": "evt_6",
+      "title": "VLSI Chip Design & Semiconductor Fabrication Symposium",
+      "description": "National technical symposium on 3nm FinFET architecture, FPGA synthesis with Verilog, and semiconductor packaging trends with guest researchers from Intel Labs and ISRO.",
+      "category": "Seminars",
+      "department": "Electronics & Communication Engineering",
+      "date": "2026-11-25",
+      "time": "11:00 AM",
+      "venue": "ECE Seminar Hall 2, Sir MV Block",
+      "mode": "offline",
+      "organizer_id": "usr_org_1",
+      "organizer_name": "Priya Sharma (AI&ML Dept President)",
+      "poster_url": "/src/assets/images/robotics_symposium_poster_1792854206316.jpg",
+      "google_form_link": "https://docs.google.com/forms/d/e/1FAIpQLSvlsisymposium2026/viewform",
+      "registration_deadline": "2026-11-21",
+      "status": "open",
+      "photos": [],
+      "approved": true,
+      "created_at": "2026-10-24T14:58:59.404Z"
+    }
+  ],
+  "registrations": [
+    {
+      "_id": "reg_1",
+      "student_id": "usr_stu_1",
+      "student_name": "Aarav Patel",
+      "student_usn": "1MS23CS012",
+      "student_email": "aarav@campusmilan.edu",
+      "student_department": "Computer Science & Engineering",
+      "event_id": "evt_1",
+      "registered_at": "2026-10-21T14:58:59.404Z",
+      "attended": true
+    },
+    {
+      "_id": "reg_2",
+      "student_id": "usr_stu_1",
+      "student_name": "Aarav Patel",
+      "student_usn": "1MS23CS012",
+      "student_email": "aarav@campusmilan.edu",
+      "student_department": "Computer Science & Engineering",
+      "event_id": "evt_5",
+      "registered_at": "2026-10-08T14:58:59.404Z",
+      "attended": true
+    },
+    {
+      "_id": "reg_3",
+      "student_id": "usr_stu_2",
+      "student_name": "Sneha Rao",
+      "student_usn": "1MS24EC088",
+      "student_email": "sneha@campusmilan.edu",
+      "student_department": "Electronics & Communication Engineering",
+      "event_id": "evt_2",
+      "registered_at": "2026-10-23T14:58:59.404Z",
+      "attended": false
+    },
+    {
+      "_id": "reg_4",
+      "student_id": "usr_stu_2",
+      "student_name": "Sneha Rao",
+      "student_usn": "1MS24EC088",
+      "student_email": "sneha@campusmilan.edu",
+      "student_department": "Electronics & Communication Engineering",
+      "event_id": "evt_3",
+      "registered_at": "2026-10-25T14:58:59.404Z",
+      "attended": false
+    }
+  ],
+  "feedback": [
+    {
+      "_id": "fb_1",
+      "student_id": "usr_stu_1",
+      "student_name": "Aarav Patel",
+      "student_department": "Computer Science & Engineering",
+      "event_id": "evt_5",
+      "rating": 5,
+      "comment": "Brilliant workshop! The hands-on microservices deployment was super insightful and well-organized.",
+      "sentiment": "positive",
+      "created_at": "2026-10-09T14:58:59.404Z"
+    },
+    {
+      "_id": "fb_2",
+      "student_id": "usr_stu_2",
+      "student_name": "Sneha Rao",
+      "student_department": "Electronics & Communication Engineering",
+      "event_id": "evt_5",
+      "rating": 4,
+      "comment": "Great content and engaging speaker, although the last section felt a bit fast.",
+      "sentiment": "positive",
+      "created_at": "2026-10-10T14:58:59.404Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif_1",
+      "student_id": "usr_stu_1",
+      "event_id": "evt_1",
+      "message": "New Event matching your interests: U-Hack 2026: 24-Hour Hackathon registration is now open!",
+      "read": false,
+      "created_at": "2026-10-26T14:58:59.404Z"
+    },
+    {
+      "_id": "notif_2",
+      "student_id": "usr_stu_1",
+      "event_id": "evt_3",
+      "message": "RoboNav 4.0: Autonomous Rovers & Edge AI Workshop announced by AI&ML Department.",
+      "read": false,
+      "created_at": "2026-10-27T14:58:59.404Z"
+    },
+    {
+      "_id": "notif_3",
+      "student_id": "usr_stu_2",
+      "event_id": "evt_2",
+      "message": "Dhwanika '26 Cultural Music & Dance Fest dates announced!",
+      "read": true,
+      "created_at": "2026-10-24T14:58:59.404Z"
+    }
+  ],
+  "saved_events": [
+    {
+      "_id": "save_1",
+      "student_id": "usr_stu_1",
+      "event_id": "evt_1",
+      "saved_at": "2026-10-28T14:58:59.404Z"
+    }
+  ]
+}
