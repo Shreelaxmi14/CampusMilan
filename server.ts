@@ -1,4 +1,7 @@
 import express from 'express';
+import http from 'http';
+import https from 'https';
+import selfsigned from 'selfsigned';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import authRoutes from './backend/routes/auth.ts';
@@ -28,10 +31,23 @@ async function startServer() {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
   });
 
+  // HTTPS for local development: start with USE_HTTPS=true
+  const useHttps = process.env.USE_HTTPS === 'true';
+  let httpServer: http.Server | https.Server;
+  if (useHttps) {
+    const pems = await selfsigned.generate(
+      [{ name: 'commonName', value: 'localhost' }],
+      { days: 365 }
+    );
+    httpServer = https.createServer({ key: pems.private, cert: pems.cert }, app);
+  } else {
+    httpServer = http.createServer(app);
+  }
+
   if (!isProd) {
     const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: { middlewareMode: true, hmr: { server: httpServer } },
       appType: 'spa'
     });
     app.use(vite.middlewares);
@@ -42,8 +58,9 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`[CampusMilan Server] Running on http://0.0.0.0:${PORT}`);
+  httpServer.listen(PORT, '0.0.0.0', () => {
+    const proto = useHttps ? 'https' : 'http';
+    console.log(`[CampusMilan Server] Running on ${proto}://localhost:${PORT}`);
   });
 }
 
